@@ -24,11 +24,13 @@ messaging.onBackgroundMessage(function (payload) {
     payload
   );
   // Customize notification here
-  const notificationTitle = payload.notificationtitle;
-  const notificationOptions = {
-    body: payload.notification.body,
-    icon: "/logo192.png",
-  };
+  // const notificationTitle = payload.notificationtitle;
+  // const notificationOptions = {
+  //   body: payload.notification.body,
+  //   icon: "/logo192.png",
+  // };
 
-  self.registration.showNotification(notificationTitle, notificationOptions);
+  // self.registration.showNotification(notificationTitle, notificationOptions);
+  self.registration.hideNotification();
 });
+
